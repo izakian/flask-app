@@ -1,17 +1,5 @@
 from flask import Flask
-from random import randint
-
-def rand(low_num, high_num):
-    """Generate rand number
-
-    Arguments:
-        low_num {int} -- int val
-        hight_num {int} -- int val
-
-    Returns:
-        int -- random in range
-    """
-    return randint(low_num, hight_num)
+from random_number_generator import RandomNumber
   
 app=Flask(__name__)
 app.debug = True
@@ -22,7 +10,8 @@ def health_check():
 
 @app.route('/rand_generate/<int:low>/<int:high>')
 def rand_generate(low, high):
-    return  str(randint(low, high))
+    rand_val=RandomNumber(low, high).generate()
+    return  str(rand_val)
 
 if __name__=='__main__':
     app.run()

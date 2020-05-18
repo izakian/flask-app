@@ -24,6 +24,9 @@ Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
+# cash files
+__pycache__
+
 # Dump file
 *.stackdump
 

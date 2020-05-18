@@ -12,10 +12,7 @@ def rand(low_num, high_num):
         int -- random in range
     """
     return randint(low_num, hight_num)
-
- -
   
-
 app=Flask(__name__)
 app.debug = True
 

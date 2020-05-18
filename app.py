@@ -1,7 +1,5 @@
 from flask import Flask
 from random import randint
-import os
-
 
 def rand(low_num, high_num):
     """Generate rand number

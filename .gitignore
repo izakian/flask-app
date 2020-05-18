@@ -25,10 +25,11 @@ ehthumbs.db
 ehthumbs_vista.db
 
 # cash files
-__pycache__
+__pycache__/*
 
 # Dump file
 *.stackdump
+*.pyc
 
 # Folder config file
 [Dd]esktop.ini

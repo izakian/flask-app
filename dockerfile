@@ -1,6 +1,6 @@
 
 # alpine is a light vesrion of docker
-from alpine:latest
+FROM alpine:latest
 
 # install python3 and pip3
 RUN apk add --no-cache python3-dev \
